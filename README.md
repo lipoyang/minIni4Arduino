@@ -6,6 +6,13 @@ The original minIni is below.
 
 [https://github.com/compuphase/minIni](https://github.com/compuphase/minIni)
 
+NOTE
+- 8.3 filename only (due to Arduino's SD library)
+- For plain INI file, specify the section as "", not NULL.
+- This library uses std::string, not String class of Arduino.
+- This library is verified to work with GR-ROSE (Renesas RX65N)
+- Case insensitive matching for section / key
+
 # minIni
 
 minIni is a portable and configurable library for reading and writing ".INI" files. At just below 900 lines of commented source 
