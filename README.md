@@ -8,6 +8,7 @@ The original minIni is below.
 
 NOTE
 - 8.3 filename only (due to Arduino's SD library)
+- Write functions are slow (due to Arduino's SD and File library)
 - For plain INI file, specify the section as "", not NULL.
 - This library uses std::string, not String class of Arduino.
 - This library is verified to work with GR-ROSE (Renesas RX65N)
