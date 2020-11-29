@@ -9,7 +9,6 @@
  */
 
 /* map required file I/O types and functions to the standard C library */
-#include <string>
 #include <stdio.h>
 #include <Arduino.h>
 #include <SD.h>

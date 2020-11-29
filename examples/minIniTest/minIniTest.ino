@@ -1,4 +1,3 @@
-#include <string>
 #include <SD.h>
 #include <minIni.h>
 
@@ -12,7 +11,7 @@ static void assert(bool cond)
   }
 }
 
-static void assert(std::string s1, std::string s2)
+static void assert(String s1, String s2)
 {
   Serial.print("<");
   Serial.print(s1.c_str());
@@ -50,7 +49,7 @@ void loop()
 {
   minIni ini("test.ini");
   minIni ini2("plain.ini");
-  std::string s;
+  String s;
 
   /* string reading */
   s = ini.gets( "first", "string" , "aap" );
@@ -106,7 +105,7 @@ void loop()
 
   /* section/key enumeration */
   Serial.println("4. section/key enumeration; file contents follows");
-  std::string section;
+  String section;
   for (int is = 0; section = ini.getsection(is), section.length() > 0; is++) {
     Serial.print("    [");
     Serial.print(section.c_str());

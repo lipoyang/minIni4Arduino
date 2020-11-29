@@ -1,4 +1,3 @@
-#include <string>
 #include <SD.h>
 #include <minIni.h>
 
@@ -22,11 +21,11 @@ void loop()
   minIni ini("setting.ini");
   
   // read INI file
-  std::string ip = ini.gets( "network", "ip address" , "none" );
+  String ip = ini.gets( "network", "ip address" , "none" );
   Serial.print("IP Address: ");
   Serial.println(ip.c_str());
   
-  std::string name = ini.gets( "user", "name" , "none" );
+  String name = ini.gets( "user", "name" , "none" );
   Serial.print("Name: ");
   Serial.println(name.c_str());
   
