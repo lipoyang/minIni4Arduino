@@ -1,4 +1,4 @@
-# minIni for Arduino
+# minIni (INI file library) for Arduino
 
 This is the minIni library ported for Arduino.
 
